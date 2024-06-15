@@ -15,26 +15,27 @@ classDiagram
     class Iphone{
     }
 
-    <<Interface>>ReprodutorMusical
+
     class ReprodutorMusical{
         +tocar()
         +pausar()
         -selecionarMusica(String musica)
     }
+    <<Interface>>ReprodutorMusical
 
-    <<Interface>>AparelhoTelefonico
     class AparelhoTelefonico{
         -ligar(String numero)
         +atender()
         -iniciarCorreioVoz()
     }
+    <<Interface>>AparelhoTelefonico
 
-    <<Interface>>NavegadorInternet
     class NavegadorInternet{
         -exibirPagina(String url)
         -adicionarNovaAba()
         -atualizarPagina()
     }
+    <<Interface>>NavegadorInternet
 
     Iphone --|> ReprodutorMusical
     Iphone --|> AparelhoTelefonico
