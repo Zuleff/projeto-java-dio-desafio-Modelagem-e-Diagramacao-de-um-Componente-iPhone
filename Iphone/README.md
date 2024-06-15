@@ -1,42 +1,43 @@
-```mermaid
+## Autores
 
+- [Luiz Vieira](https://github.com/Zuleff)
+
+## POO - Desafio
+
+### Diagrama UML (Mermaid)
+
+```mermaid
 ---
-title:
+title: Modelagem e Diagramação de um Componente iPhone
 ---
 classDiagram
 
+    class Iphone{
+    }
 
-class Iphone
-<<Class>>Iphone
+    <<Interface>>ReprodutorMusical
+    class ReprodutorMusical{
+        +tocar()
+        +pausar()
+        -selecionarMusica(String musica)
+    }
 
-class ReprodutorMusical
-<<Interface>>ReprodutorMusical
+    <<Interface>>AparelhoTelefonico
+    class AparelhoTelefonico{
+        -ligar(String numero)
+        +atender()
+        -iniciarCorreioVoz()
+    }
 
-class AparelhoTelefonico
-<<Interface>>AparelhoTelefonico
-
-class NavegadorInternet
-<<Interface>>NavegadorInternet
+    <<Interface>>NavegadorInternet
+    class NavegadorInternet{
+        -exibirPagina(String url)
+        -adicionarNovaAba()
+        -atualizarPagina()
+    }
 
     Iphone --|> ReprodutorMusical
-
-    ReprodutorMusical: +tocar()
-    ReprodutorMusical: +pausar()
-    ReprodutorMusical: -selecionarMusica(String musica)
-
-
     Iphone --|> AparelhoTelefonico
-    AparelhoTelefonico: -ligar(String numero)
-    AparelhoTelefonico: +atender()
-    AparelhoTelefonico: -iniciarCorreioVoz()
-
-
-
-
     Iphone --|> NavegadorInternet
-    NavegadorInternet: -exibirPagina(String url)
-    NavegadorInternet: -adicionarNovaAba()
-    NavegadorInternet: -atualizarPagina()
-
 
 ```
