@@ -1,4 +1,4 @@
-## Autores
+## Autor
 
 - [Luiz Vieira](https://github.com/Zuleff)
 
