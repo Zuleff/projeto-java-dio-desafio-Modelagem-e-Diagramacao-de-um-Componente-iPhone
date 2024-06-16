@@ -19,21 +19,21 @@ classDiagram
     class ReprodutorMusical{
         +tocar()
         +pausar()
-        -selecionarMusica(String musica)
+        +selecionarMusica(String musica)
     }
     <<Interface>>ReprodutorMusical
 
     class AparelhoTelefonico{
-        -ligar(String numero)
+        +ligar(String numero)
         +atender()
-        -iniciarCorreioVoz()
+        +iniciarCorreioVoz()
     }
     <<Interface>>AparelhoTelefonico
 
     class NavegadorInternet{
-        -exibirPagina(String url)
-        -adicionarNovaAba()
-        -atualizarPagina()
+        +exibirPagina(String url)
+        +adicionarNovaAba()
+        +atualizarPagina()
     }
     <<Interface>>NavegadorInternet
 
