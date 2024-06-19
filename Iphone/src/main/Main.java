@@ -1,11 +1,8 @@
 package main;
 
 import funcoes.aparelhoTelefonico.AparelhoTelefonico;
-import funcoes.aparelhoTelefonico.Atender;
-import funcoes.aparelhoTelefonico.Ligar;
 import funcoes.navegadorInternet.NavegadorInternet;
 import funcoes.reprodutorMusical.ReprodutorMusical;
-import funcoes.reprodutorMusical.Tocar;
 import iphone.Iphone;
 
 /**
